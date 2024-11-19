@@ -47,9 +47,7 @@ public class Modelo {
 			}
 
 		}
-
 		return false;
-
 	}
 
 	private static boolean introducirCategorias(ArrayList<libro> listaLibros) {
@@ -68,7 +66,6 @@ public class Modelo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		return false;
 	}
 
@@ -181,88 +178,6 @@ public class Modelo {
 
 	}
 
-	private static boolean sacarAutoresBBDD() {
-		ArrayList<Autor> listaAutores = new ArrayList<Autor>();
-		ResultSet resultAutores;
-		PreparedStatement sentenciaSelectAutores = null;
-		PreparedStatement sentenciaSelectLibros = null;
-		try {
-			sentenciaSelectAutores = conexionbbdd.getConexionMySQL()
-					.prepareStatement("SELECT id_autor,nombre,pais FROM autores");
-			resultAutores = sentenciaSelectAutores.executeQuery();
-			while (resultAutores.next()) {
-				listaAutores.add(new Autor(String.valueOf(resultAutores.getInt("id_autor")),
-						resultAutores.getString("nombre"), resultAutores.getString("pais")));
-			}
-			sentenciaSelectAutores.close();
-			sentenciaSelectLibros = conexionbbdd.getConexionMySQL()
-					.prepareStatement("SELECT id_autor,nombre,pais FROM autores");
-			return true;
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return false;
-	}
-
-//	private static ArrayList<Categoria> obtenerCategoriasDesdeBD() {
-//
-//		conexionbbdd = Conexion.getInstance();
-//		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
-//		PreparedStatement sentenciaSelectAutores = null;
-//		ResultSet rs;
-//		try {
-//			// Asumiendo que tienes una conexión a la base de datos configurada
-//			String query = "SELECT c.id_categoria, c.nombre_categoria, l.id_libro, l.titulo, a.id_autor, a.nombre, a.pais "
-//					+ "FROM categorias c " + "JOIN libros l ON c.id_categoria = l.id_categoria "
-//					+ "JOIN autores a ON l.id_autor = a.id_autor";
-//			sentenciaSelectAutores = conexionbbdd.getConexionMySQL().prepareStatement(query);
-//			rs = sentenciaSelectAutores.executeQuery();
-//			HashMap<Integer, Categoria> categoriaMap = new HashMap<>();
-//
-//			while (rs.next()) {
-//				// Recuperar datos de la categoría
-//				int idCategoria = rs.getInt("id_categoria");
-//				String nombreCategoria = rs.getString("nombre_categoria");
-//
-//				Categoria categoria = categoriaMap.get(idCategoria);
-//				if (categoria == null) {
-//					categoria = new Categoria();
-//					categoria.setId(String.valueOf(idCategoria));
-//					categoria.setnombreCategoria(nombreCategoria);
-//					categoriaMap.put(idCategoria, categoria);
-//				}
-//
-//				// Crear autor
-//				int idAutor = rs.getInt("id_autor");
-//				String nombreAutor = rs.getString("nombre");
-//				String paisAutor = rs.getString("pais");
-//
-//				Autor autor = new Autor();
-//				autor.setIdAutor(String.valueOf(idAutor));
-//				autor.setNombre(nombreAutor);
-//				autor.setPais(paisAutor);
-//
-//				// Crear libro
-//				int idLibro = rs.getInt("id_libro");
-//				String titulo = rs.getString("titulo");
-//
-//				Libro libro = new Libro();
-//				libro.setId(String.valueOf(idLibro));
-//				libro.setTitulo(titulo);
-//				libro.setAutor(autor);
-//
-//				// Agregar libro a la categoría
-//				categoria.anadirLibro(libro);
-//			}
-//
-//			categorias.addAll(categoriaMap.values());
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		return categorias;
-//	}
-
 	public static void persistirMemoria() {
 		try {
 			ArrayList<Categoria> categorias = obtenerCategoriasDesdeBD2();
@@ -356,4 +271,92 @@ public class Modelo {
 		}
 		return null;
 	}
+
+	public static boolean conectadoABBDD() {
+		conexionbbdd = Conexion.getInstance();
+		return conexionbbdd.isConectado();
+	}
+
+//	private static boolean sacarAutoresBBDD() {
+//		ArrayList<Autor> listaAutores = new ArrayList<Autor>();
+//		ResultSet resultAutores;
+//		PreparedStatement sentenciaSelectAutores = null;
+//		PreparedStatement sentenciaSelectLibros = null;
+//		try {
+//			sentenciaSelectAutores = conexionbbdd.getConexionMySQL()
+//					.prepareStatement("SELECT id_autor,nombre,pais FROM autores");
+//			resultAutores = sentenciaSelectAutores.executeQuery();
+//			while (resultAutores.next()) {
+//				listaAutores.add(new Autor(String.valueOf(resultAutores.getInt("id_autor")),
+//						resultAutores.getString("nombre"), resultAutores.getString("pais")));
+//			}
+//			sentenciaSelectAutores.close();
+//			sentenciaSelectLibros = conexionbbdd.getConexionMySQL()
+//					.prepareStatement("SELECT id_autor,nombre,pais FROM autores");
+//			return true;
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		return false;
+//	}
+
+//	private static ArrayList<Categoria> obtenerCategoriasDesdeBD() {
+//
+//		conexionbbdd = Conexion.getInstance();
+//		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
+//		PreparedStatement sentenciaSelectAutores = null;
+//		ResultSet rs;
+//		try {
+//			// Asumiendo que tienes una conexión a la base de datos configurada
+//			String query = "SELECT c.id_categoria, c.nombre_categoria, l.id_libro, l.titulo, a.id_autor, a.nombre, a.pais "
+//					+ "FROM categorias c " + "JOIN libros l ON c.id_categoria = l.id_categoria "
+//					+ "JOIN autores a ON l.id_autor = a.id_autor";
+//			sentenciaSelectAutores = conexionbbdd.getConexionMySQL().prepareStatement(query);
+//			rs = sentenciaSelectAutores.executeQuery();
+//			HashMap<Integer, Categoria> categoriaMap = new HashMap<>();
+//
+//			while (rs.next()) {
+//				// Recuperar datos de la categoría
+//				int idCategoria = rs.getInt("id_categoria");
+//				String nombreCategoria = rs.getString("nombre_categoria");
+//
+//				Categoria categoria = categoriaMap.get(idCategoria);
+//				if (categoria == null) {
+//					categoria = new Categoria();
+//					categoria.setId(String.valueOf(idCategoria));
+//					categoria.setnombreCategoria(nombreCategoria);
+//					categoriaMap.put(idCategoria, categoria);
+//				}
+//
+//				// Crear autor
+//				int idAutor = rs.getInt("id_autor");
+//				String nombreAutor = rs.getString("nombre");
+//				String paisAutor = rs.getString("pais");
+//
+//				Autor autor = new Autor();
+//				autor.setIdAutor(String.valueOf(idAutor));
+//				autor.setNombre(nombreAutor);
+//				autor.setPais(paisAutor);
+//
+//				// Crear libro
+//				int idLibro = rs.getInt("id_libro");
+//				String titulo = rs.getString("titulo");
+//
+//				Libro libro = new Libro();
+//				libro.setId(String.valueOf(idLibro));
+//				libro.setTitulo(titulo);
+//				libro.setAutor(autor);
+//
+//				// Agregar libro a la categoría
+//				categoria.anadirLibro(libro);
+//			}
+//
+//			categorias.addAll(categoriaMap.values());
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		return categorias;
+//	}
+
 }

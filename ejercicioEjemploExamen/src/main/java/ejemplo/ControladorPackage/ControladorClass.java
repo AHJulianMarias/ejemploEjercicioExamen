@@ -9,11 +9,14 @@ import ejemplo.Vista.Ventana;
 public class ControladorClass {
 	private Modelo modelo;
 	private Ventana ventana;
+	private boolean conectado;
 
 	public ControladorClass(Modelo modelo, Ventana ventana) {
 		super();
 		this.modelo = modelo;
 		this.ventana = ventana;
+		this.conectado = modelo.conectadoABBDD();
+		iniciarVentanas();
 		ventana.btnExcelBBDD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (modelo.introducirDatosBBDD()) {
@@ -27,6 +30,21 @@ public class ControladorClass {
 				modelo.persistirMemoria();
 			}
 		});
+
+	}
+
+	private void iniciarVentanas() {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		if (this.conectado) {
+			this.ventana.lblNewLabel.setText("Te has conectado a la base de datos");
+
+		} else {
+			this.ventana.lblNewLabel.setText("No te has conectado a la base de datos");
+		}
 
 	}
 
