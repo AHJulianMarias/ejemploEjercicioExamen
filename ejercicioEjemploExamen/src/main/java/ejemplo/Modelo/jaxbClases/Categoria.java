@@ -5,21 +5,22 @@ import java.util.ArrayList;
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlElementWrapper;
+import jakarta.xml.bind.annotation.XmlType;
 
+@XmlType(propOrder = { "nombreCategoria", "listaLibros" })
 public class Categoria {
 	private String id;
 	private String nombreCategoria;
-	private ArrayList<Libro> listaLibros;
+	private ArrayList<Libro> listaLibros = new ArrayList<Libro>();
 
 	public Categoria() {
 		super();
 	}
 
-	public Categoria(String id, String nombreCategoria, ArrayList<Libro> listaLibros) {
+	public Categoria(String id, String nombreCategoria) {
 		super();
 		this.id = id;
 		this.nombreCategoria = nombreCategoria;
-		this.listaLibros = listaLibros;
 	}
 
 	@XmlAttribute(name = "id")
@@ -54,6 +55,6 @@ public class Categoria {
 		if (this.listaLibros == null) {
 			this.listaLibros = new ArrayList<>(); // Inicializar si es nulo
 		}
-
+		this.listaLibros.add(libro);
 	}
 }

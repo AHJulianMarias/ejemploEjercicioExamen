@@ -1,59 +1,578 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Biblioteca>
     <Categoria id="71">
-        <Libros/>
         <NombreCategoria>Ficción</NombreCategoria>
+        <Libros>
+            <Libro id="11">
+                <Autor id="280" pais="Francia">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="16">
+                <Autor id="285" pais="India">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="17">
+                <Autor id="286" pais="Japón">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="22">
+                <Autor id="291" pais="México">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="28">
+                <Autor id="297" pais="Rusia">
+                    <Nombre>Lewis Carroll</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="34">
+                <Autor id="300" pais="Colombia">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="36">
+                <Autor id="305" pais="Rusia">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="49">
+                <Autor id="318" pais="Irlanda">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="52">
+                <Autor id="321" pais="España">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="59">
+                <Autor id="328" pais="México">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="78">
+                <Autor id="347" pais="Irlanda">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="81">
+                <Autor id="350" pais="Argentina">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="88">
+                <Autor id="357" pais="México">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="89">
+                <Autor id="358" pais="Irlanda">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="72">
-        <Libros/>
         <NombreCategoria>Horror</NombreCategoria>
+        <Libros>
+            <Libro id="4">
+                <Autor id="273" pais="Colombia">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="13">
+                <Autor id="282" pais="Rusia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="41">
+                <Autor id="310" pais="India">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="71">
+                <Autor id="340" pais="Canadá">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="92">
+                <Autor id="361" pais="Reino Unido">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="95">
+                <Autor id="364" pais="Sudáfrica">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="101">
+                <Autor id="370" pais="Sudáfrica">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="73">
-        <Libros/>
         <NombreCategoria>Aventura</NombreCategoria>
+        <Libros>
+            <Libro id="26">
+                <Autor id="295" pais="Colombia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="58">
+                <Autor id="327" pais="Colombia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="60">
+                <Autor id="329" pais="Canadá">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="75">
+                <Autor id="344" pais="Reino Unido">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="74">
-        <Libros/>
         <NombreCategoria>Realismo Mágico</NombreCategoria>
+        <Libros>
+            <Libro id="8">
+                <Autor id="277" pais="Brasil">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="32">
+                <Autor id="301" pais="Australia">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="39">
+                <Autor id="308" pais="Argentina">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="43">
+                <Autor id="294" pais="Australia">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="55">
+                <Autor id="324" pais="Sudáfrica">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="63">
+                <Autor id="332" pais="Colombia">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="66">
+                <Autor id="335" pais="España">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="79">
+                <Autor id="348" pais="España">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="87">
+                <Autor id="356" pais="India">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="75">
-        <Libros/>
         <NombreCategoria>Misterio</NombreCategoria>
+        <Libros>
+            <Libro id="21">
+                <Autor id="290" pais="Canadá">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="23">
+                <Autor id="292" pais="Colombia">
+                    <Nombre>Lewis Carroll</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="30">
+                <Autor id="299" pais="Colombia">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="40">
+                <Autor id="309" pais="Sudáfrica">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="48">
+                <Autor id="317" pais="Francia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="68">
+                <Autor id="337" pais="Rusia">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="77">
+                <Autor id="346" pais="Alemania">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="83">
+                <Autor id="352" pais="Japón">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="76">
-        <Libros/>
         <NombreCategoria>Distopía</NombreCategoria>
+        <Libros>
+            <Libro id="7">
+                <Autor id="276" pais="Grecia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="37">
+                <Autor id="306" pais="Japón">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="57">
+                <Autor id="326" pais="Colombia">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="69">
+                <Autor id="338" pais="Colombia">
+                    <Nombre>William Shakespeare</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="70">
+                <Autor id="339" pais="Alemania">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="73">
+                <Autor id="342" pais="India">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="82">
+                <Autor id="351" pais="España">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="85">
+                <Autor id="354" pais="Australia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="91">
+                <Autor id="275" pais="Grecia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="99">
+                <Autor id="368" pais="India">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="77">
-        <Libros/>
         <NombreCategoria>Romance</NombreCategoria>
+        <Libros>
+            <Libro id="25">
+                <Autor id="294" pais="Australia">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="38">
+                <Autor id="307" pais="México">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="46">
+                <Autor id="278" pais="España">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="74">
+                <Autor id="343" pais="Grecia">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="78">
-        <Libros/>
         <NombreCategoria>Historia</NombreCategoria>
+        <Libros>
+            <Libro id="5">
+                <Autor id="274" pais="Sudáfrica">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="18">
+                <Autor id="287" pais="Colombia">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="61">
+                <Autor id="330" pais="Estados Unidos">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="62">
+                <Autor id="331" pais="Francia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="76">
+                <Autor id="345" pais="Canadá">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="97">
+                <Autor id="366" pais="Argentina">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="79">
-        <Libros/>
         <NombreCategoria>Épico</NombreCategoria>
+        <Libros>
+            <Libro id="12">
+                <Autor id="281" pais="Brasil">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="14">
+                <Autor id="283" pais="Brasil">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="15">
+                <Autor id="284" pais="Italia">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="45">
+                <Autor id="281" pais="Brasil">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="56">
+                <Autor id="325" pais="Colombia">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="64">
+                <Autor id="333" pais="España">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="65">
+                <Autor id="334" pais="Francia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="93">
+                <Autor id="306" pais="Japón">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="98">
+                <Autor id="367" pais="Brasil">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="80">
-        <Libros/>
         <NombreCategoria>Poesía</NombreCategoria>
+        <Libros>
+            <Libro id="9">
+                <Autor id="278" pais="España">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="20">
+                <Autor id="289" pais="Sudáfrica">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="42">
+                <Autor id="311" pais="Sudáfrica">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="47">
+                <Autor id="316" pais="Argentina">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="72">
+                <Autor id="341" pais="Francia">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="81">
-        <Libros/>
         <NombreCategoria>Fantasía</NombreCategoria>
+        <Libros>
+            <Libro id="3">
+                <Autor id="272" pais="Brasil">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="10">
+                <Autor id="272" pais="Brasil">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="24">
+                <Autor id="293" pais="India">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="31">
+                <Autor id="300" pais="Colombia">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="67">
+                <Autor id="336" pais="Alemania">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="86">
+                <Autor id="355" pais="Francia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="96">
+                <Autor id="365" pais="Irlanda">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="82">
-        <Libros/>
         <NombreCategoria>Drama</NombreCategoria>
+        <Libros>
+            <Libro id="6">
+                <Autor id="275" pais="Grecia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="27">
+                <Autor id="296" pais="Canadá">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="29">
+                <Autor id="298" pais="Italia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="44">
+                <Autor id="313" pais="Irlanda">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="51">
+                <Autor id="320" pais="Reino Unido">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="54">
+                <Autor id="323" pais="Irlanda">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="90">
+                <Autor id="359" pais="Argentina">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="94">
+                <Autor id="363" pais="Brasil">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="100">
+                <Autor id="282" pais="Rusia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="83">
-        <Libros/>
         <NombreCategoria>Clásico</NombreCategoria>
+        <Libros>
+            <Libro id="1">
+                <Autor id="270" pais="Sudáfrica">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="2">
+                <Autor id="270" pais="Sudáfrica">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="19">
+                <Autor id="288" pais="Reino Unido">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="50">
+                <Autor id="319" pais="Australia">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="80">
+                <Autor id="349" pais="Japón">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="84">
-        <Libros/>
         <NombreCategoria>Ciencia Ficción</NombreCategoria>
+        <Libros>
+            <Libro id="33">
+                <Autor id="302" pais="Rusia">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="35">
+                <Autor id="304" pais="Brasil">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="53">
+                <Autor id="298" pais="Italia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="84">
+                <Autor id="324" pais="Sudáfrica">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
 </Biblioteca>

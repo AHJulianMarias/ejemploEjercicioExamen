@@ -8,7 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 
 import org.apache.poi.ss.usermodel.Row;
@@ -158,7 +157,6 @@ public class Modelo {
 				listaLibros.add(new libro(fila.getCell(0).toString(), fila.getCell(1).toString(),
 						fila.getCell(2).toString(), fila.getCell(3).toString()));
 				fila = hoja1.getRow(numFila++);
-
 			}
 			wb.close();
 			if (listaLibros.size() > 0) {
@@ -185,7 +183,6 @@ public class Modelo {
 
 	private static boolean sacarAutoresBBDD() {
 		ArrayList<Autor> listaAutores = new ArrayList<Autor>();
-
 		ResultSet resultAutores;
 		PreparedStatement sentenciaSelectAutores = null;
 		PreparedStatement sentenciaSelectLibros = null;
@@ -198,80 +195,77 @@ public class Modelo {
 						resultAutores.getString("nombre"), resultAutores.getString("pais")));
 			}
 			sentenciaSelectAutores.close();
-
 			sentenciaSelectLibros = conexionbbdd.getConexionMySQL()
 					.prepareStatement("SELECT id_autor,nombre,pais FROM autores");
-
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		return false;
-
 	}
 
-	private static ArrayList<Categoria> obtenerCategoriasDesdeBD() {
-		conexionbbdd = Conexion.getInstance();
-		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
-		PreparedStatement sentenciaSelectAutores = null;
-		ResultSet rs;
-		try {
-			// Asumiendo que tienes una conexión a la base de datos configurada
-			String query = "SELECT c.id_categoria, c.nombre_categoria, l.id_libro, l.titulo, a.id_autor, a.nombre, a.pais "
-					+ "FROM categorias c " + "JOIN libros l ON c.id_categoria = l.id_categoria "
-					+ "JOIN autores a ON l.id_autor = a.id_autor";
-			sentenciaSelectAutores = conexionbbdd.getConexionMySQL().prepareStatement(query);
-			rs = sentenciaSelectAutores.executeQuery();
-			HashMap<Integer, Categoria> categoriaMap = new HashMap<>();
-
-			while (rs.next()) {
-				// Recuperar datos de la categoría
-				int idCategoria = rs.getInt("id_categoria");
-				String nombreCategoria = rs.getString("nombre_categoria");
-
-				Categoria categoria = categoriaMap.get(idCategoria);
-				if (categoria == null) {
-					categoria = new Categoria();
-					categoria.setId(String.valueOf(idCategoria));
-					categoria.setnombreCategoria(nombreCategoria);
-					categoriaMap.put(idCategoria, categoria);
-				}
-
-				// Crear autor
-				int idAutor = rs.getInt("id_autor");
-				String nombreAutor = rs.getString("nombre");
-				String paisAutor = rs.getString("pais");
-
-				Autor autor = new Autor();
-				autor.setIdAutor(String.valueOf(idAutor));
-				autor.setNombre(nombreAutor);
-				autor.setPais(paisAutor);
-
-				// Crear libro
-				int idLibro = rs.getInt("id_libro");
-				String titulo = rs.getString("titulo");
-
-				Libro libro = new Libro();
-				libro.setId(String.valueOf(idLibro));
-				libro.setTitulo(titulo);
-				libro.setAutor(autor);
-
-				// Agregar libro a la categoría
-				categoria.anadirLibro(libro);
-			}
-
-			categorias.addAll(categoriaMap.values());
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return categorias;
-	}
+//	private static ArrayList<Categoria> obtenerCategoriasDesdeBD() {
+//
+//		conexionbbdd = Conexion.getInstance();
+//		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
+//		PreparedStatement sentenciaSelectAutores = null;
+//		ResultSet rs;
+//		try {
+//			// Asumiendo que tienes una conexión a la base de datos configurada
+//			String query = "SELECT c.id_categoria, c.nombre_categoria, l.id_libro, l.titulo, a.id_autor, a.nombre, a.pais "
+//					+ "FROM categorias c " + "JOIN libros l ON c.id_categoria = l.id_categoria "
+//					+ "JOIN autores a ON l.id_autor = a.id_autor";
+//			sentenciaSelectAutores = conexionbbdd.getConexionMySQL().prepareStatement(query);
+//			rs = sentenciaSelectAutores.executeQuery();
+//			HashMap<Integer, Categoria> categoriaMap = new HashMap<>();
+//
+//			while (rs.next()) {
+//				// Recuperar datos de la categoría
+//				int idCategoria = rs.getInt("id_categoria");
+//				String nombreCategoria = rs.getString("nombre_categoria");
+//
+//				Categoria categoria = categoriaMap.get(idCategoria);
+//				if (categoria == null) {
+//					categoria = new Categoria();
+//					categoria.setId(String.valueOf(idCategoria));
+//					categoria.setnombreCategoria(nombreCategoria);
+//					categoriaMap.put(idCategoria, categoria);
+//				}
+//
+//				// Crear autor
+//				int idAutor = rs.getInt("id_autor");
+//				String nombreAutor = rs.getString("nombre");
+//				String paisAutor = rs.getString("pais");
+//
+//				Autor autor = new Autor();
+//				autor.setIdAutor(String.valueOf(idAutor));
+//				autor.setNombre(nombreAutor);
+//				autor.setPais(paisAutor);
+//
+//				// Crear libro
+//				int idLibro = rs.getInt("id_libro");
+//				String titulo = rs.getString("titulo");
+//
+//				Libro libro = new Libro();
+//				libro.setId(String.valueOf(idLibro));
+//				libro.setTitulo(titulo);
+//				libro.setAutor(autor);
+//
+//				// Agregar libro a la categoría
+//				categoria.anadirLibro(libro);
+//			}
+//
+//			categorias.addAll(categoriaMap.values());
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		return categorias;
+//	}
 
 	public static void persistirMemoria() {
 		try {
-			ArrayList<Categoria> categorias = obtenerCategoriasDesdeBD();
+			ArrayList<Categoria> categorias = obtenerCategoriasDesdeBD2();
 			Biblioteca biblioteca = new Biblioteca();
 			biblioteca.setListaCategoria(categorias);
 
@@ -295,5 +289,71 @@ public class Modelo {
 			System.err.println("Error al generar el archivo XML: " + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+
+	private static ArrayList<Categoria> obtenerCategoriasDesdeBD2() {
+		ArrayList<Autor> listaAutores = new ArrayList<Autor>();
+		ArrayList<Libro> listaLibros = new ArrayList<Libro>();
+		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
+
+		PreparedStatement sentenciaSelectAutores = null;
+		PreparedStatement sentenciaSelectLibros = null;
+		PreparedStatement sentenciaSelectCategorias = null;
+		PreparedStatement sentenciaSelectId_CatId_Libro = null;
+		ResultSet rs;
+
+		String idAutor_libro;
+		conexionbbdd = Conexion.getInstance();
+
+		try {
+			sentenciaSelectAutores = conexionbbdd.getConexionMySQL().prepareStatement("SELECT * FROM autores");
+			rs = sentenciaSelectAutores.executeQuery();
+			while (rs.next()) {
+				listaAutores.add(
+						new Autor(String.valueOf(rs.getInt("id_autor")), rs.getString("nombre"), rs.getString("pais")));
+			}
+			System.out.println("Lista de autores completada");
+			sentenciaSelectLibros = conexionbbdd.getConexionMySQL().prepareStatement("SELECT * FROM libros");
+			rs = sentenciaSelectLibros.executeQuery();
+			while (rs.next()) {
+				idAutor_libro = String.valueOf(rs.getInt("id_autor"));
+				for (Autor a : listaAutores) {
+					if (a.getIdAutor().equals(idAutor_libro)) {
+						listaLibros.add(new Libro(rs.getString("id_libro"), rs.getString("titulo"), a));
+					}
+				}
+
+			}
+			sentenciaSelectCategorias = conexionbbdd.getConexionMySQL().prepareStatement("SELECT * FROM categorias");
+			rs = sentenciaSelectCategorias.executeQuery();
+			while (rs.next()) {
+				categorias.add(
+						new Categoria(String.valueOf(rs.getInt("id_categoria")), rs.getString("nombre_categoria")));
+
+			}
+			sentenciaSelectId_CatId_Libro = conexionbbdd.getConexionMySQL().prepareStatement(
+					"SELECT id_libro,categorias.id_categoria FROM libros INNER JOIN categorias ON libros.id_categoria = categorias.id_categoria ");
+			rs = sentenciaSelectId_CatId_Libro.executeQuery();
+			while (rs.next()) {
+				for (Categoria cat : categorias) {
+					for (Libro l : listaLibros) {
+						if (String.valueOf(rs.getInt("id_libro")).equals(l.getId())
+								&& String.valueOf(rs.getInt("id_categoria")).equals(cat.getId())) {
+							cat.anadirLibro(l);
+						}
+					}
+				}
+
+			}
+
+			System.out.println("Lista de categorias completada");
+
+			return categorias;
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 }

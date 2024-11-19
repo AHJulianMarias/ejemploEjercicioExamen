@@ -2,16 +2,18 @@ package ejemplo.Modelo.jaxbClases;
 
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 
+@XmlType(propOrder = { "titulo", "autor" })
 public class Libro {
 	private String id;
-	private String Titulo;
+	private String titulo;
 	private Autor autor;
 
 	public Libro(String id, String titulo, Autor autor) {
 		super();
 		this.id = id;
-		Titulo = titulo;
+		this.titulo = titulo;
 		this.autor = autor;
 	}
 
@@ -30,11 +32,11 @@ public class Libro {
 
 	@XmlElement(name = "Titulo")
 	public String getTitulo() {
-		return Titulo;
+		return titulo;
 	}
 
 	public void setTitulo(String titulo) {
-		Titulo = titulo;
+		this.titulo = titulo;
 	}
 
 	@XmlElement(name = "Autor")

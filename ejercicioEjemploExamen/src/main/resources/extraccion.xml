@@ -1,59 +1,679 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Biblioteca>
     <Categoria id="71">
-        <Libros/>
         <NombreCategoria>Ficción</NombreCategoria>
+        <Libros>
+            <Libro id="11">
+                <Titulo>La Odisea</Titulo>
+                <Autor id="280" pais="Francia">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="16">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="285" pais="India">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="17">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="286" pais="Japón">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="22">
+                <Titulo>1984</Titulo>
+                <Autor id="291" pais="México">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="28">
+                <Titulo>La Divina Comedia</Titulo>
+                <Autor id="297" pais="Rusia">
+                    <Nombre>Lewis Carroll</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="34">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="300" pais="Colombia">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="36">
+                <Titulo>Drácula</Titulo>
+                <Autor id="305" pais="Rusia">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="49">
+                <Titulo>La Odisea</Titulo>
+                <Autor id="318" pais="Irlanda">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="52">
+                <Titulo>La Odisea</Titulo>
+                <Autor id="321" pais="España">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="59">
+                <Titulo>Drácula</Titulo>
+                <Autor id="328" pais="México">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="78">
+                <Titulo>El Principito</Titulo>
+                <Autor id="347" pais="Irlanda">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="81">
+                <Titulo>Harry Potter y la Piedra Filosofal</Titulo>
+                <Autor id="350" pais="Argentina">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="88">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="357" pais="México">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="89">
+                <Titulo>El Señor de los Anillos</Titulo>
+                <Autor id="358" pais="Irlanda">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="72">
-        <Libros/>
         <NombreCategoria>Horror</NombreCategoria>
+        <Libros>
+            <Libro id="4">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="273" pais="Colombia">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="13">
+                <Titulo>La Iliada</Titulo>
+                <Autor id="282" pais="Rusia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="41">
+                <Titulo>El Gran Gatsby</Titulo>
+                <Autor id="310" pais="India">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="71">
+                <Titulo>Hamlet</Titulo>
+                <Autor id="340" pais="Canadá">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="92">
+                <Titulo>El Principito</Titulo>
+                <Autor id="361" pais="Reino Unido">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="95">
+                <Titulo>Don Quijote</Titulo>
+                <Autor id="364" pais="Sudáfrica">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="101">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="370" pais="Sudáfrica">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="73">
-        <Libros/>
         <NombreCategoria>Aventura</NombreCategoria>
+        <Libros>
+            <Libro id="26">
+                <Titulo>Juego de Tronos</Titulo>
+                <Autor id="295" pais="Colombia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="58">
+                <Titulo>La Divina Comedia</Titulo>
+                <Autor id="327" pais="Colombia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="60">
+                <Titulo>Don Quijote</Titulo>
+                <Autor id="329" pais="Canadá">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="75">
+                <Titulo>El Retrato de Dorian Gray</Titulo>
+                <Autor id="344" pais="Reino Unido">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="74">
-        <Libros/>
         <NombreCategoria>Realismo Mágico</NombreCategoria>
+        <Libros>
+            <Libro id="8">
+                <Titulo>Cien Años de Soledad</Titulo>
+                <Autor id="277" pais="Brasil">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="32">
+                <Titulo>Hamlet</Titulo>
+                <Autor id="301" pais="Australia">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="39">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="308" pais="Argentina">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="43">
+                <Titulo>Fahrenheit 451</Titulo>
+                <Autor id="294" pais="Australia">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="55">
+                <Titulo>Macbeth</Titulo>
+                <Autor id="324" pais="Sudáfrica">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="63">
+                <Titulo>1984</Titulo>
+                <Autor id="332" pais="Colombia">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="66">
+                <Titulo>Harry Potter y la Piedra Filosofal</Titulo>
+                <Autor id="335" pais="España">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="79">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="348" pais="España">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="87">
+                <Titulo>El Principito</Titulo>
+                <Autor id="356" pais="India">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="75">
-        <Libros/>
         <NombreCategoria>Misterio</NombreCategoria>
+        <Libros>
+            <Libro id="21">
+                <Titulo>El Retrato de Dorian Gray</Titulo>
+                <Autor id="290" pais="Canadá">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="23">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="292" pais="Colombia">
+                    <Nombre>Lewis Carroll</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="30">
+                <Titulo>Frankenstein</Titulo>
+                <Autor id="299" pais="Colombia">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="40">
+                <Titulo>La Odisea</Titulo>
+                <Autor id="309" pais="Sudáfrica">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="48">
+                <Titulo>Cien Años de Soledad</Titulo>
+                <Autor id="317" pais="Francia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="68">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="337" pais="Rusia">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="77">
+                <Titulo>Matar a un Ruiseñor</Titulo>
+                <Autor id="346" pais="Alemania">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="83">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="352" pais="Japón">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="76">
-        <Libros/>
         <NombreCategoria>Distopía</NombreCategoria>
+        <Libros>
+            <Libro id="7">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="276" pais="Grecia">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="37">
+                <Titulo>El Gran Gatsby</Titulo>
+                <Autor id="306" pais="Japón">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="57">
+                <Titulo>Drácula</Titulo>
+                <Autor id="326" pais="Colombia">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="69">
+                <Titulo>1984</Titulo>
+                <Autor id="338" pais="Colombia">
+                    <Nombre>William Shakespeare</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="70">
+                <Titulo>El Retrato de Dorian Gray</Titulo>
+                <Autor id="339" pais="Alemania">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="73">
+                <Titulo>Los Miserables</Titulo>
+                <Autor id="342" pais="India">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="82">
+                <Titulo>Fahrenheit 451</Titulo>
+                <Autor id="351" pais="España">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="85">
+                <Titulo>Ana Karenina</Titulo>
+                <Autor id="354" pais="Australia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="91">
+                <Titulo>La Iliada</Titulo>
+                <Autor id="275" pais="Grecia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="99">
+                <Titulo>Drácula</Titulo>
+                <Autor id="368" pais="India">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="77">
-        <Libros/>
         <NombreCategoria>Romance</NombreCategoria>
+        <Libros>
+            <Libro id="25">
+                <Titulo>El Señor de los Anillos</Titulo>
+                <Autor id="294" pais="Australia">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="38">
+                <Titulo>1984</Titulo>
+                <Autor id="307" pais="México">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="46">
+                <Titulo>Crimen y Castigo</Titulo>
+                <Autor id="278" pais="España">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="74">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="343" pais="Grecia">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="78">
-        <Libros/>
         <NombreCategoria>Historia</NombreCategoria>
+        <Libros>
+            <Libro id="5">
+                <Titulo>La Iliada</Titulo>
+                <Autor id="274" pais="Sudáfrica">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="18">
+                <Titulo>Ana Karenina</Titulo>
+                <Autor id="287" pais="Colombia">
+                    <Nombre>F. Scott Fitzgerald</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="61">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="330" pais="Estados Unidos">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="62">
+                <Titulo>El Principito</Titulo>
+                <Autor id="331" pais="Francia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="76">
+                <Titulo>Los Miserables</Titulo>
+                <Autor id="345" pais="Canadá">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="97">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="366" pais="Argentina">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="79">
-        <Libros/>
         <NombreCategoria>Épico</NombreCategoria>
+        <Libros>
+            <Libro id="12">
+                <Titulo>Ana Karenina</Titulo>
+                <Autor id="281" pais="Brasil">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="14">
+                <Titulo>Macbeth</Titulo>
+                <Autor id="283" pais="Brasil">
+                    <Nombre>George R.R. Martin</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="15">
+                <Titulo>Matar a un Ruiseñor</Titulo>
+                <Autor id="284" pais="Italia">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="45">
+                <Titulo>Juego de Tronos</Titulo>
+                <Autor id="281" pais="Brasil">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="56">
+                <Titulo>Ana Karenina</Titulo>
+                <Autor id="325" pais="Colombia">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="64">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="333" pais="España">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="65">
+                <Titulo>Don Quijote</Titulo>
+                <Autor id="334" pais="Francia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="93">
+                <Titulo>Los Miserables</Titulo>
+                <Autor id="306" pais="Japón">
+                    <Nombre>J.K. Rowling</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="98">
+                <Titulo>Hamlet</Titulo>
+                <Autor id="367" pais="Brasil">
+                    <Nombre>Mary Shelley</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="80">
-        <Libros/>
         <NombreCategoria>Poesía</NombreCategoria>
+        <Libros>
+            <Libro id="9">
+                <Titulo>Juego de Tronos</Titulo>
+                <Autor id="278" pais="España">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="20">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="289" pais="Sudáfrica">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="42">
+                <Titulo>Los Miserables</Titulo>
+                <Autor id="311" pais="Sudáfrica">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="47">
+                <Titulo>El Gran Gatsby</Titulo>
+                <Autor id="316" pais="Argentina">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="72">
+                <Titulo>El Hobbit</Titulo>
+                <Autor id="341" pais="Francia">
+                    <Nombre>J.R.R. Tolkien</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="81">
-        <Libros/>
         <NombreCategoria>Fantasía</NombreCategoria>
+        <Libros>
+            <Libro id="3">
+                <Titulo>La Divina Comedia</Titulo>
+                <Autor id="272" pais="Brasil">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="10">
+                <Titulo>Fahrenheit 451</Titulo>
+                <Autor id="272" pais="Brasil">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="24">
+                <Titulo>Juego de Tronos</Titulo>
+                <Autor id="293" pais="India">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="31">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="300" pais="Colombia">
+                    <Nombre>Victor Hugo</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="67">
+                <Titulo>El Retrato de Dorian Gray</Titulo>
+                <Autor id="336" pais="Alemania">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="86">
+                <Titulo>Harry Potter y la Piedra Filosofal</Titulo>
+                <Autor id="355" pais="Francia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="96">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="365" pais="Irlanda">
+                    <Nombre>Leo Tolstoy</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="82">
-        <Libros/>
         <NombreCategoria>Drama</NombreCategoria>
+        <Libros>
+            <Libro id="6">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="275" pais="Grecia">
+                    <Nombre>Antoine de Saint-Exupéry</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="27">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="296" pais="Canadá">
+                    <Nombre>George Orwell</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="29">
+                <Titulo>1984</Titulo>
+                <Autor id="298" pais="Italia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="44">
+                <Titulo>Crimen y Castigo</Titulo>
+                <Autor id="313" pais="Irlanda">
+                    <Nombre>Harper Lee</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="51">
+                <Titulo>La Metamorfosis</Titulo>
+                <Autor id="320" pais="Reino Unido">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="54">
+                <Titulo>Orgullo y Prejuicio</Titulo>
+                <Autor id="323" pais="Irlanda">
+                    <Nombre>Bram Stoker</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="90">
+                <Titulo>Crimen y Castigo</Titulo>
+                <Autor id="359" pais="Argentina">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="94">
+                <Titulo>Cien Años de Soledad</Titulo>
+                <Autor id="363" pais="Brasil">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="100">
+                <Titulo>1984</Titulo>
+                <Autor id="282" pais="Rusia">
+                    <Nombre>Homero</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="83">
-        <Libros/>
         <NombreCategoria>Clásico</NombreCategoria>
+        <Libros>
+            <Libro id="1">
+                <Titulo>Frankenstein</Titulo>
+                <Autor id="270" pais="Sudáfrica">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="2">
+                <Titulo>Frankenstein</Titulo>
+                <Autor id="270" pais="Sudáfrica">
+                    <Nombre>Dante Alighieri</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="19">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="288" pais="Reino Unido">
+                    <Nombre>Fyodor Dostoevsky</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="50">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="319" pais="Australia">
+                    <Nombre>Oscar Wilde</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="80">
+                <Titulo>Harry Potter y la Piedra Filosofal</Titulo>
+                <Autor id="349" pais="Japón">
+                    <Nombre>Jane Austen</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
     <Categoria id="84">
-        <Libros/>
         <NombreCategoria>Ciencia Ficción</NombreCategoria>
+        <Libros>
+            <Libro id="33">
+                <Titulo>El Principito</Titulo>
+                <Autor id="302" pais="Rusia">
+                    <Nombre>Gabriel García Márquez</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="35">
+                <Titulo>Juego de Tronos</Titulo>
+                <Autor id="304" pais="Brasil">
+                    <Nombre>Ray Bradbury</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="53">
+                <Titulo>Alicia en el País de las Maravillas</Titulo>
+                <Autor id="298" pais="Italia">
+                    <Nombre>Miguel de Cervantes</Nombre>
+                </Autor>
+            </Libro>
+            <Libro id="84">
+                <Titulo>Macbeth</Titulo>
+                <Autor id="324" pais="Sudáfrica">
+                    <Nombre>Franz Kafka</Nombre>
+                </Autor>
+            </Libro>
+        </Libros>
     </Categoria>
 </Biblioteca>
