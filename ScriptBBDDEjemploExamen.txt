@@ -1,0 +1,22 @@
+-- Tabla de autores
+CREATE TABLE Autores (
+    id_autor INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    pais VARCHAR(50)
+);
+
+-- Tabla de categorías
+CREATE TABLE Categorias (
+    id_categoria INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_categoria VARCHAR(100) NOT NULL
+);
+
+-- Tabla de libros
+CREATE TABLE Libros (
+    id_libro INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(200) NOT NULL,
+    id_autor INT NOT NULL,
+    id_categoria INT NOT NULL,
+    FOREIGN KEY (id_autor) REFERENCES Autores(id_autor),
+    FOREIGN KEY (id_categoria) REFERENCES Categorias(id_categoria)
+);

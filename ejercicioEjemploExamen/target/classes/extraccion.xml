@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Biblioteca>
+    <Categoria id="71">
+        <Libros/>
+        <NombreCategoria>Ficción</NombreCategoria>
+    </Categoria>
+    <Categoria id="72">
+        <Libros/>
+        <NombreCategoria>Horror</NombreCategoria>
+    </Categoria>
+    <Categoria id="73">
+        <Libros/>
+        <NombreCategoria>Aventura</NombreCategoria>
+    </Categoria>
+    <Categoria id="74">
+        <Libros/>
+        <NombreCategoria>Realismo Mágico</NombreCategoria>
+    </Categoria>
+    <Categoria id="75">
+        <Libros/>
+        <NombreCategoria>Misterio</NombreCategoria>
+    </Categoria>
+    <Categoria id="76">
+        <Libros/>
+        <NombreCategoria>Distopía</NombreCategoria>
+    </Categoria>
+    <Categoria id="77">
+        <Libros/>
+        <NombreCategoria>Romance</NombreCategoria>
+    </Categoria>
+    <Categoria id="78">
+        <Libros/>
+        <NombreCategoria>Historia</NombreCategoria>
+    </Categoria>
+    <Categoria id="79">
+        <Libros/>
+        <NombreCategoria>Épico</NombreCategoria>
+    </Categoria>
+    <Categoria id="80">
+        <Libros/>
+        <NombreCategoria>Poesía</NombreCategoria>
+    </Categoria>
+    <Categoria id="81">
+        <Libros/>
+        <NombreCategoria>Fantasía</NombreCategoria>
+    </Categoria>
+    <Categoria id="82">
+        <Libros/>
+        <NombreCategoria>Drama</NombreCategoria>
+    </Categoria>
+    <Categoria id="83">
+        <Libros/>
+        <NombreCategoria>Clásico</NombreCategoria>
+    </Categoria>
+    <Categoria id="84">
+        <Libros/>
+        <NombreCategoria>Ciencia Ficción</NombreCategoria>
+    </Categoria>
+</Biblioteca>
