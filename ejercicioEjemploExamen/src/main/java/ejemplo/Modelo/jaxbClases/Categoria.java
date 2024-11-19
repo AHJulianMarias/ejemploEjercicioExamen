@@ -11,7 +11,7 @@ import jakarta.xml.bind.annotation.XmlType;
 public class Categoria {
 	private String id;
 	private String nombreCategoria;
-	private ArrayList<Libro> listaLibros = new ArrayList<Libro>();
+	private ArrayList<LibroJAXB> listaLibros = new ArrayList<LibroJAXB>();
 
 	public Categoria() {
 		super();
@@ -43,15 +43,15 @@ public class Categoria {
 
 	@XmlElementWrapper(name = "Libros")
 	@XmlElement(name = "Libro")
-	public ArrayList<Libro> getListaLibros() {
+	public ArrayList<LibroJAXB> getListaLibros() {
 		return listaLibros;
 	}
 
-	public void setListaLibros(ArrayList<Libro> listaLibros) {
+	public void setListaLibros(ArrayList<LibroJAXB> listaLibros) {
 		this.listaLibros = listaLibros;
 	}
 
-	public void anadirLibro(Libro libro) {
+	public void anadirLibro(LibroJAXB libro) {
 		if (this.listaLibros == null) {
 			this.listaLibros = new ArrayList<>(); // Inicializar si es nulo
 		}

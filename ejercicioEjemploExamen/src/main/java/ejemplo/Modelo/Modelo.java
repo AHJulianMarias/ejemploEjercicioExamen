@@ -19,7 +19,7 @@ import Utilidades.Utilidades;
 import ejemplo.Modelo.jaxbClases.Autor;
 import ejemplo.Modelo.jaxbClases.Biblioteca;
 import ejemplo.Modelo.jaxbClases.Categoria;
-import ejemplo.Modelo.jaxbClases.Libro;
+import ejemplo.Modelo.jaxbClases.LibroJAXB;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
@@ -293,7 +293,7 @@ public class Modelo {
 
 	private static ArrayList<Categoria> obtenerCategoriasDesdeBD2() {
 		ArrayList<Autor> listaAutores = new ArrayList<Autor>();
-		ArrayList<Libro> listaLibros = new ArrayList<Libro>();
+		ArrayList<LibroJAXB> listaLibros = new ArrayList<LibroJAXB>();
 		ArrayList<Categoria> categorias = new ArrayList<Categoria>();
 
 		PreparedStatement sentenciaSelectAutores = null;
@@ -319,7 +319,7 @@ public class Modelo {
 				idAutor_libro = String.valueOf(rs.getInt("id_autor"));
 				for (Autor a : listaAutores) {
 					if (a.getIdAutor().equals(idAutor_libro)) {
-						listaLibros.add(new Libro(rs.getString("id_libro"), rs.getString("titulo"), a));
+						listaLibros.add(new LibroJAXB(rs.getString("id_libro"), rs.getString("titulo"), a));
 					}
 				}
 
@@ -336,7 +336,7 @@ public class Modelo {
 			rs = sentenciaSelectId_CatId_Libro.executeQuery();
 			while (rs.next()) {
 				for (Categoria cat : categorias) {
-					for (Libro l : listaLibros) {
+					for (LibroJAXB l : listaLibros) {
 						if (String.valueOf(rs.getInt("id_libro")).equals(l.getId())
 								&& String.valueOf(rs.getInt("id_categoria")).equals(cat.getId())) {
 							cat.anadirLibro(l);
